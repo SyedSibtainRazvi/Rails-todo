@@ -1,0 +1,17 @@
+<h1>Todo App</h1>
+<table border>
+  <thead>
+    <tr>
+      <th>Task Title</th>
+      <th>Completed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @todos.each do |todo|%>
+      <tr>
+        <td><%= todo.title%></td>
+        <td><%= todo.completed ? "Yes" : "No"%></td>
+      </tr>
+    </tbody>
+  <%end%>
+</table>
