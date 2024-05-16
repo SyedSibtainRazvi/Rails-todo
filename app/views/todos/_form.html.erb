@@ -1,13 +1,14 @@
-<%= form_for @todo do |form| %>
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+<%= form_for @todo, html: { class: 'max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg' } do |form| %>
+  <div class="mb-4">
+    <%= form.label :title, class: 'block text-gray-700 text-sm font-bold mb-2' %>
+    <%= form.text_field :title, class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' %>
   </div>
-  <div class="field">
-    <%= form.label :completed %>
-    <%= form.check_box :completed %>
+  <div class="mb-4">
+    <%= form.label :completed, class: 'block text-gray-700 text-sm font-bold mb-2' %>
+    <%= form.check_box :completed, class: 'mr-2 leading-tight' %>
+    <span class="text-gray-700 text-sm">Completed</span>
   </div>
-  <div class="actions">
-    <%= form.submit %>
+  <div class="flex items-center justify-between">
+    <%= form.submit 'Save', class: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' %>
   </div>
 <% end %>

@@ -1,5 +1,4 @@
-<h1>New Todo</h1>
-<%= link_to 'Back', todos_path %>
-<br>
-<br>
-<%= render 'form', todo: @todo %>
+<div class="max-w-lg mx-auto mt-10 bg-white p-6 rounded-lg shadow-md">
+  <h1 class="text-2xl text-center mb-6">Create a new Todo</h1>
+  <%= render 'form', todo: @todo %>
+</div>
