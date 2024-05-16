@@ -1,3 +1,7 @@
-<h1>Todo Details</h1>
-<h4>Task Name: <%= @todo.title%></h4>
-<h4>Task Status: <%= @todo.completed ? "Completed" : "Incompleted"%></h4>
+<div class="max-w-lg mx-auto mt-10 bg-white p-6 rounded-lg shadow-md">
+  <h1 class="text-2xl text-center mb-6">Todo Details</h1>
+  <div class="text-gray-700">
+    <h4 class="text-lg font-semibold mb-2">Task Name: <span class="font-normal"><%= @todo.title %></span></h4>
+    <h4 class="text-lg font-semibold">Task Status: <span class="font-normal"><%= @todo.completed ? "Completed" : "Incompleted" %></span></h4>
+  </div>
+</div>
